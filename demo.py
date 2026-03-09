@@ -61,7 +61,7 @@ def dict_lookup(nsw):
 def concatenate_nsw_spans(nsw_spans):
     result = []
     current_span = nsw_spans[0]
-    print(nsw_spans[0])
+    print("NSW_spans:", nsw_spans)
     
     for i in range(1, len(nsw_spans)):
         next_span = nsw_spans[i]
