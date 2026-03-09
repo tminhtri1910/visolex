@@ -61,7 +61,6 @@ def dict_lookup(nsw):
 def concatenate_nsw_spans(nsw_spans):
     result = []
     current_span = nsw_spans[0]
-    print("NSW_spans:", nsw_spans)
     
     for i in range(1, len(nsw_spans)):
         next_span = nsw_spans[i]
@@ -196,6 +195,8 @@ def demo():
 
         # NSW Detection
         copied_nsw_spans = copy.deepcopy(nsw_spans)
+        print("NSW_spans:", copied_nsw_spans)
+        
         concat_nsw_spans = concatenate_nsw_spans(copied_nsw_spans)
 
         print(bold("============================ NON-STANDARD WORDS DETECTION ============================"))
